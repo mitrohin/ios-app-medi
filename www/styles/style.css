@@ -12,6 +12,7 @@ body{
 	background-color:#fff;
 }
 
+.icon-oz {background-image:url("../images/Online.png"); background-size:87px 87px;}
 .icon-1 {background-image:url("../images/Order.png"); background-size:87px 87px;}
 .icon-2 {background-image:url("../images/Call.png"); background-size:87px 87px;}
 .icon-3 {background-image:url("../images/Services.png"); background-size:87px 87px;}
