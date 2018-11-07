@@ -1,0 +1,52 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com_58ru_medi" versionCode = "32" version="1.1.3">
+  <name>Медиклиник</name>
+  <description>Mediclinic App Info.</description>
+  <author href="http://58ru.ru" email="mail@58ru.ru">58RU Internet Agency</author>
+  <content src="index.html"/>
+  <preference name="permissions" value="none"/>
+  <preference name="orientation" value="portrait"/>
+  <preference name="target-device" value="universal"/>
+  <preference name="fullscreen" value="true"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="prerendered-icon" value="true"/>
+  <preference name="stay-in-webview" value="false"/>
+  <preference name="ios-statusbarstyle" value="black-opaque"/>
+  <preference name="detect-data-types" value="true"/>
+  <preference name="exit-on-suspend" value="false"/>
+  <preference name="show-splash-screen-spinner" value="true"/>
+  <preference name="auto-hide-splash-screen" value="true"/>
+  <preference name="disable-cursor" value="false"/>
+  <preference name="android-minSdkVersion" value="16"/>
+  <preference name="android-installLocation" value="auto"/>
+  <gap:plugin name="org.apache.cordova.inappbrowser"/>
+  <gap:plugin name="org.apache.cordova.splashscreen"/>
+  <icon src="icon-default.png" gap:role="default"/>
+  <icon src="icon.png" gap:platform="ios" />
+  <icon src="icon-57.png" gap:platform="ios" width="57" height="57"/>
+  <icon src="icon-72.png" gap:platform="ios" width="72" height="72"/>
+  <icon src="icon-57-2x.png" gap:platform="ios" width="114" height="114"/>
+  <icon src="icon-72-2x.png" gap:platform="ios" width="144" height="144"/>
+
+  <gap:splash src="ANDROID-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi"/>
+  <gap:splash src="ANDROID-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi"/>
+  <gap:splash src="ANDROID-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi"/>
+  <gap:splash src="ANDROID-xdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi"/>
+
+  <gap:splash src="IOS-iPhone3-portrait.png" gap:platform="ios" width="320" height="480"/>
+  <gap:splash src="IOS-iPhone4-portrait@2x.png" gap:platform="ios" width="640" height="960"/>
+  <gap:splash src="IOS-iPhone5-portrait@2x.png" gap:platform="ios" width="640" height="1136"/>
+  <gap:splash src="IOS-iPhone6-portrait@2x.png" gap:platform="ios" width="750" height="1334"/>
+  <gap:splash src="IOS-iPhone6plus-portrait@3x.png" gap:platform="ios" width="1242" height="2208"/>
+
+  <gap:splash src="IOS-iPad-portrait.png" gap:platform="ios" width="768" height="1024"/>
+  <gap:splash src="IOS-iPadAirMini-portrait@2x.png" gap:platform="ios" width="1536" height="2048"/>
+
+  <access origin="*"/>
+  <plugin name="cordova-plugin-whitelist" version="1"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+</widget>

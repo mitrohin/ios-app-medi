@@ -1,0 +1,65 @@
+<!DOCTYPE HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<title>Записаться на прием</title>
+
+<link href="styles/style.css"     		 rel="stylesheet" type="text/css">
+<link href="styles/framework.css" 		 rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jqueryui.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+
+</head>
+<body class="white-body"> 
+
+<div id="preloader">
+	<div id="status"></div>
+</div>
+
+<div class="all-elements">
+    <div class="header">
+        <div class="icon-back">
+			<a href="index.html"><img height="19" src="images/Back.png" /></a>
+        </div>
+		<div class="title-back">
+			<a href="index.html">Назад</a>
+		</div>
+		<div class="title-page">
+			<h1>Записаться на прием</h1>
+		</div>
+    </div>    
+    <div class="header-clear"></div>
+    
+    <div class="content">
+        <div class="one-half-responsive">
+            <div class="container no-bottom">
+                <div class="contact-form no-bottom"> 
+                    <div class="formSuccessMessageWrap" id="formSuccessMessageWrap"></div>
+
+                    <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                        <fieldset> 
+                            <div class="formFieldWrap">
+                                <label class="field-title contactNameField" for="contactNameField">Имя:<span>(обязательно)</span></label>
+                                <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField"/>
+                            </div>
+                            <div class="formFieldWrap">
+                                <label class="field-title contactEmailField" for="contactEmailField">Телефон: <span>(обязательно)</span></label>
+                                <input type="number" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
+                            </div>
+                            <div class="formSubmitButtonErrorsWrap">
+                                <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="Записаться на прием" data-formId="contactForm"/>
+                            </div>
+                        </fieldset>
+                    </form>       
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<script type="text/javascript" src="scripts/order.js"></script>
+</body>
+</html>
